@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulários</title>
+	</head>
+	<body>
+		<h3>Formulários</h3>
+		<form action="servidor" method="POST"><!-- form = Formulários -->
+		<!-- action = receber formulário-->
+		<!-- method = metodo de envio-->
+		<!-- GET = ele mostra oque foi gititado como usuario e senha-->
+		<!-- POST = seguro, e não exibe as informações digitadas -->
+			<label>Digite o nome:</label> <!--label = é caixa -->
+			<input type="text" 
+			name="nome_user" 
+			id="n_user"
+			maxlength="5" 
+			placeholder="Digite seu nome"
+			size="20"
+			required="true">
+			<!-- maxlength = quantidade de caracteres
+			placeholder = algo que vai digitar e some
+			size = tamanho da caixa do formulário
+			readonly = campo apenas para leitura
+			disabled = desabilita o campo
+			required = validador para mostrar o usuario preencher o campo que esta em branco-->
+			
+			
+			<br/><label>Nome 2:</label>
+			<input type="password" 
+			name="senha_user" 
+			id="s_user"
+			maxlength="5"
+			size="20"
+			placeholder="Digite sua senha"
+			required="true"><br/>
+			
+			Comentário:<br/>
+			<input type="textarea"
+			placeholder="Digete um comentário:"
+			size="30"><br/>
+			<!--<textarea>Digite algo</textarea> caixa de texto para cometario-->
+			<label>Estado Islamico:</label><br/>
+			<select>
+				<option value=""></option><br/>
+				<option value="SP">São Paulo</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="MG">Minas Gerais</option>
+			</select><br/>
+			<label><h3>Seleciona a Disciplina:<label><br/></h3>
+			<input type="checkbox" value="TecW">TecWeb<br/>
+			<input type="checkbox" value="DevOp">DevOps<br/>
+			<input type="checkbox" value="LP">LPII<br/>
+			<input type="checkbox" value="Eng">Engenharia de Software<br/>
+			
+			<br/><h3><label>Seleciona uma Linguagem:<label><br/></h3>
+			<input type="radio" name="opcao" value="op1">Python<br/>
+			<input type="radio" name="opcao" value="op2">Java<br/>
+			<input type="radio" name="opcao" value="op3">C#<br/>
+			
+			
+			<br/><input type="submit" value="Enviar"><br/>
+			<input type="reset" value="Limpar"><br/>
+			
+			<!-- value = algo que quer que apareca-->
+			<!-- submit = criar um botão -->
+		</form>
+		<footer class="site-footer">
+			<div class="container">
+				<p>Copyright © 2017 - Desenvolvido pelo Lucas Almeida</p>
+			</div>
+		</footer>
+	</body>
+</html>
